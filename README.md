@@ -1,4 +1,4 @@
-## be-cli
+## trustbe-cli
 
 快捷生成指定模板的代码，节省重复的搬运工作
 
@@ -9,7 +9,7 @@
 
 ```sh
 
-npm install be-cli -g
+npm install trustbe-cli -g
 
 ```
 

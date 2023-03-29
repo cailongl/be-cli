@@ -1,6 +1,6 @@
 {
-  "name": "be-cli",
-  "version": "0.0.1",
+  "name": "trustbe-cli",
+  "version": "0.0.2",
   "description": "前端快捷生成页面",
   "main": "index.js",
   "scripts": {
@@ -9,10 +9,17 @@
   "bin": {
     "be-cli": "index.js"
   },
+  "author": {
+    "name": "cailong",
+    "email": "cailong.lcl@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cailongl/be-cli"
+  },
   "type": "module",
   "module": "index.js",
-  "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "commander": "^10.0.0",
     "ejs": "^3.1.9",
