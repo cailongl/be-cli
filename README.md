@@ -27,6 +27,10 @@ be-cli -V
 
 be-cli create
 
+# or alias
+
+be-cli c
+
 ```
 
 选择指定的模板，输入名称即可

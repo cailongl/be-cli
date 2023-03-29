@@ -52,10 +52,11 @@ const promptQuestions = [
   },
 ]
 
-program.version(pkg.version).description('command line 快速创建模板文件')
+program.version(pkg.version, '-v, --version').description('command line 快速创建模板文件')
 
 program
   .command('create')
+  .alias('c')
   .action(() => {
     inquirer.prompt(promptQuestions).then((answers) => {
       try {
