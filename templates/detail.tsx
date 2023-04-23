@@ -2,7 +2,7 @@ import { PageContainer } from '@ant-design/pro-layout';
 import { ProCard, ProDescriptions } from '@ant-design/pro-components';
 import { useLoadingRequest } from '@/be-common/src/hooks';
 import { useParams } from 'umi';
-import { queryDetail } from './接口文件';
+import { queryDetail } from './service';
 
 const <%= pageName %>: React.FC<any> = () => {
   const { id } = useParams<any>();

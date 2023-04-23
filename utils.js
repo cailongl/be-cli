@@ -5,3 +5,5 @@ export function capitalizeFirstLetter(str) {
 export function toCamelCase(str) {
   return str.replace(/[-_]+([a-z])/g, (match, letter) => letter.toUpperCase());
 }
+
+export const log = console.log

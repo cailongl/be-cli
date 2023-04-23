@@ -1,11 +1,11 @@
 import { PageContainer } from '@ant-design/pro-layout';
 import type { ProColumns } from '@ant-design/pro-table';
 import ProTable from '@ant-design/pro-table';
-import { Button, Form, Input, Modal, Popconfirm, Select } from 'antd';
+import { Button, Input, Popconfirm, Select } from 'antd';
 import { useEffect, useRef, useState } from 'react';
 import { history, Link } from 'umi';
 import TableAction from '@/be-common/src/components/TableAction';
-import { create, deleteItem, queryList } from './接口文件';
+import { create, deleteItem, queryList } from './service';
 
 type DataItemType = {
   id: string;
@@ -13,8 +13,6 @@ type DataItemType = {
 
 const <%= pageName %>: React.FC<any> = () => {
   const tableRef = useRef<any>();
-  const [open, setOpen] = useState<boolean>(false);
-  const [form] = Form.useForm();
 
   const onRemove = (id: string) => {
     deleteItem(id).then(() => {
